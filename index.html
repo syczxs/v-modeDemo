@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <h2>姓名:{{name}}</h2>
+        <h2>年龄:{{age}}</h2>
+        <div>
+            <h2>name：</h2><input v-model="name"></input>
+        </div>
+        <div>
+            <h2>hobby：</h2><input v-model="info.hobby"></input>
+        </div>
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                name: 'syc',
+                age: 26,
+                sex: 'man',
+                info: {
+                    hobby: 'dota',
+                    family: {
+                        father: 'smh'
+                    }
+                }
+            }
+        })
+        // const app = document.getElementById('app')
+        // console.log(app)
+        // const timer = setInterval(() => {
+        //     const span = document.createElement("li")
+        //     span.innerHTML = "<span>1</span>"
+        //     app.appendChild(span)
+
+        // }, 1000)
+
+    </script>
+
+</body>
+
+</html>
